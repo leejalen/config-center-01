@@ -1,6 +1,6 @@
 #端口配置
 server:
-  port: 7005
+  port: 7004
 
 #应用设置
 spring:
