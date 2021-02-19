@@ -1,17 +1,17 @@
 #端口配置
 server:
-  port: 7004
+  port: 7002
 
 #应用设置
 spring:
   #对外暴露的名字
   application:
-    name: eureka7004
+    name: eureka7002
 
 #eureka配置
 eureka:
   instance:
-    hostname: 127.0.0.1
+    hostname: eureka7002.com
   client:
     #false表示不向注册中心注册自己
     register-with-eureka: false
@@ -20,7 +20,7 @@ eureka:
     #设置eureka server的交互地址，即对外暴露的地址
     service-url:
       #设置eureka server的交互地址，搭建eureka集群
-      defaultZone: http://127.0.0.1:7001/eureka/
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7003.com:7003/eureka/
   server:
     #是否开启自我保护模式（是：eureka不注销异常服务）
     enable-self-preservation: true
