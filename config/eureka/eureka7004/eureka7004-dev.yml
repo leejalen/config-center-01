@@ -1,3 +1,13 @@
+#端口配置
+server:
+  port: 7004
+
+#应用设置
+spring:
+  #对外暴露的名字
+  application:
+    name: eureka7004
+
 #eureka配置
 eureka:
   instance:
