@@ -1,2 +1,5 @@
 config:
   info: this is a test info application!
+
+server:
+  port: 7005
